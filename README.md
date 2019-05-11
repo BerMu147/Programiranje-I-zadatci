@@ -10,7 +10,7 @@ Some solutions of assignments
 using namespace std;
 
 //Zbir prve i zadnje cifre
-/*int Suma(int broj)
+int Suma(int broj)
 {
 	int prvi = 0, zadnji= 0, suma = 0;
 	zadnji = broj % 10;
@@ -38,10 +38,10 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 //10 karaktera, izbroj velike, male i ostale unesene
-/*int main()
+int main()
 {
 	char n;
 	int brojacV = 0, brojacM = 0, brojacO = 0;
@@ -62,10 +62,10 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 //Obrni broj i saberi svako drugu cifru
-/*int obrni(int broj)
+int obrni(int broj)
 {
 	int obrnuti = 0, temp;
 	while (broj != 0)
@@ -106,11 +106,11 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, poštujuæi sve faze procesa programiranja u kojem æete za uneseni prirodni broj n izraèunati sumu:
 S=1!/3¨2 + 2!/5'2+... n!/(2n+1)'2*/
-/*int faktorijel(int n)
+int faktorijel(int n)
 {
 	int fkt = 1;
 	for (int i = 1; i <= n; i++)
@@ -137,7 +137,7 @@ int main()
 	cout << "Suma iznosi: " << suma(n) << endl;
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, poštujuæi sve faze procesa programiranja u kojem æete omoguæiti unos dva prirodna broja.
 Provjerite èine li uneseni brojev prijateljski par. Prirodni brojevi a i b èine prijateljski par brojeva ako je zbir pravih
@@ -149,7 +149,7 @@ Upotijebite funckije:
 int sumaPravihDjelitelja(int);
 bool provjera(int,int);
 */
-/*int SumaPD(int m)
+int SumaPD(int m)
 {
 	int suma = 0;
 	for (int i = 1; i <= m/2; i++)
@@ -180,7 +180,7 @@ int main()
 	(provjera(m, n));
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, poštujuæi sve faze procesa programiranja, koji mogucava da se ispisu svi brojevi koji zadovoljavaju
 uvjet da im je zapis jednak zapisu posljednjih znamenki njihovog kvadrata. (Npr 6'2=36, 25'2=625).
@@ -188,7 +188,7 @@ Provjeru vrsiti za prvih 150 prirodnih brojeva.
 Upotrijebite funckiju:
 bool provjera(int); */
 
-/*bool provjera(int a)
+bool provjera(int a)
 {
 	int temp = pow(a, 2);
 	if (a < 10)
@@ -218,7 +218,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, poštujuæi sve faze procesa programiranja, u kojem cete omoguciti unos prirodnog broja.
 Provjerite je li broj trivijalan(prost) uz pomoc funckije:
@@ -227,7 +227,7 @@ u slucaju da broj NIJE trivijalan odredite i ispisite sve njegove djelitelje uz 
 void djelitelj(int);
 Napomena: Broje je trivijalan(prost) ako je djeljiv SAMO sa jedan i sa samim sobom. */
 
-/*bool trivijalan(int n)
+bool trivijalan(int n)
 {
 	for (int i = 2; i < n; i++)
 	{
@@ -263,7 +263,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, koji će ispisati sve troznamenkaste brojeve koji su jednaki sumi
 faktorijela svojih znamenki – ABC = A! + B! + C!
@@ -271,40 +271,40 @@ Upotrijebite funkcije:
 bool provjera(int);
 int faktorijel(int);*/
 
-//int faktorijel(int n)
-//{
-//	int fkt = 1;
-//	for (int i = 1; i <= n; i++)
-//	{
-//		fkt *= i;
-//	}
-//	return fkt;
-//}
-//
-//bool provjera(int n)
-//{
-//	if (faktorijel)
-//		return true;
-//	else
-//		return false;
-//}
-//
-//int main()
-//{
-//	int n;
-//	cin >> n;
-//	cout << faktorijel(n) << endl;
-//
-//	system("pause");
-//	return 0;
-//}
+int faktorijel(int n)
+{
+	int fkt = 1;
+	for (int i = 1; i <= n; i++)
+	{
+		fkt *= i;
+	}
+	return fkt;
+}
+
+bool provjera(int n)
+{
+	if (faktorijel)
+		return true;
+	else
+		return false;
+}
+
+int main()
+{
+	int n;
+	cin >> n;
+	cout << faktorijel(n) << endl;
+
+	system("pause");
+	return 0;
+}
 
 /*Napišite program u kojem ćete deklarirati matricu 5x4. Redak u matrici je učenik, a kolona predmet. Uz pomoć funkcije:
 * `void unos (int [] [4]);` omogućite unos samo prolaznih ocjena (2-5) za sve učenike;
 * `float prosjek(int []);` izračunati prosječnu ocjenu učenika; za kojeg od učenika će se računati prosjek bira korisnik;
 * `int prebroji (int [][4], int);` prebrojati koliko učenika ima ocjenu 4 i više na predmetu po izboru korisnika.*/
 
-/*const int v1 = 5, v2 = 4;
+const int v1 = 5, v2 = 4;
 void unos(int niz[v1][v2])
 {
 	for (int i = 0; i < v1; i++)
@@ -344,11 +344,11 @@ int main()
 	unos(niz);
 	system("pause");
 	return 0;
-}*/
+}
 
 //Baratanje nizovima (sortiranje)
 
-/*const int v = 5;
+const int v = 5;
 
 void unos(int niz[v])
 {
@@ -402,10 +402,10 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 // Baratanje s 2D nizovima (transponse)
-/*const int v = 4;
+const int v = 4;
 
 void unos(int niz[v][v])
 {
@@ -464,7 +464,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 
 /*Napišite program u kojem ćete deklarirati niz od 7 cijelih brojeva. Uz pomoć funkcije:
@@ -472,7 +472,7 @@ int main()
 * `float prosjecna(int [], int);` izračunati prosječnu vrijednost elemenata niza;
 * `bool opadajuci (int [], int);` provjeriti jesu li elementi niza poredani u opadajuæem poretku (n1 > n2 > n3 > n4 > n5 > n6 > n7);*/
 
-/*const int vel = 7;
+const int vel = 7;
 void unos(int niz[])
 {
 	cout << "Unesite clanove niza: " << endl;
@@ -515,14 +515,14 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program u kojem ćete deklarirati matricu 5x4. Redak u matrici je student, a kolona predmet. Uz pomoć funkcije:
 * `void unos (int [] [4]);` omogućite unos samo prolaznih ocjena (6-10) za sve studente;
 * `float prosjek(int []);` izračunati prosječnu ocjenu jednog studenta; za kojeg od studenta će se računati prosjek bira korisnik;
 * `int prebroji (int [][4], int);` prebrojati koliko studenata ima ocjenu 8 i više na predmetu po izboru korisnika.*/
 
-/*void unos(int niz[5][4])
+void unos(int niz[5][4])
 {
 	cout << "Unesi studenta, zatim njegove prolazne ocjene ";
 	for (int i = 0; i < 5; i++)
@@ -594,7 +594,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Dat je 2D niz koji simulira šahovsku tablu. Omogućiti korisniku unos cjelobrojnih elemenata 2D niza tako da se u
 svako „crno“ polje unese parni broj
@@ -602,7 +602,7 @@ sa neparnim brojem cifara a u „bijelo“ polje neparni broj sa parnim brijem c
 Izračunati i ispisati prosjeke (aritmetičke sredine) svih elemenata na bijelim poljima iznad
 glavne dijagonale te na crnim poljima ispod sporedne dijagonale.*/
 
-/*const int vel = 4;
+const int vel = 4;
 bool ParniBrcfr(int n)
 {
 	int brojac = 0;
@@ -712,103 +712,103 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
-//const int v = 4;
-//
-//bool BrCfr(int n)
-//{
-//	int brojac = 0;
-//	while (n > 0)
-//	{
-//		brojac++;
-//		n /= 10;
-//	}
-//	if (brojac % 2 != 0)
-//		return true;
-//
-//	return false;
-//}
-//
-//void unos(int niz[][v])
-//{
-//	int unos;
-//	cout << "Unesite clanove niza sa neparnim brojem cifara: ";
-//	for (int i = 0; i < v; i++)
-//	{
-//		for (int j = 0; j < v; j++)
-//		{
-//			cin >> unos;
-//			if (BrCfr(unos) == true)
-//			{
-//				niz[i][j] = unos;
-//			}
-//			else
-//			{
-//				cout << "Ponovi unos: ";
-//				j--;
-//			}
-//		}
-//	}
-//	cout << endl;
-//}
-//
-//void ispis(int niz[][v])
-//{
-//	cout << "Niz izgleda ovako: " << endl;
-//
-//	for (int i = 0; i < v; i++)
-//	{
-//		for (int j = 0; j < v; j++)
-//		{
-//			cout << niz[i][j] << "   ";
-//		}
-//		cout << endl;
-//	}
-//	cout << endl;
-//}
-//
-//float aritmetickaR(int niz[v])
-//{
-//	float suma = 0;
-//	int brojac = 0;
-//	for (int i = 0; i < v; i++)
-//	{
-//		suma += niz[i];
-//		brojac++;
-//	}
-//	return suma / brojac;
-//
-//}
-//float aritmetickaC(int niz[v])
-//{
-//	float suma = 0;
-//	int brojac = 0;
-//	for (int j = 0; j < v; j++)
-//	{
-//		suma += niz[j];
-//		brojac++;
-//	}
-//	return suma / brojac;
-//}
-//
-//int main()
-//{
-//	int niz[v][v];
-//	unos(niz);
-//	ispis(niz);
-//	cout << "Aritmeticka redova: " << aritmetickaR(niz[v]) << endl;
-//	cout << "Aritmeticka kolona: " << aritmetickaC(niz[v]) << endl;
-//	system("pause");
-//	return 0;
-//}
+const int v = 4;
+
+bool BrCfr(int n)
+{
+	int brojac = 0;
+	while (n > 0)
+	{
+		brojac++;
+		n /= 10;
+	}
+	if (brojac % 2 != 0)
+		return true;
+
+	return false;
+}
+
+void unos(int niz[][v])
+{
+	int unos;
+	cout << "Unesite clanove niza sa neparnim brojem cifara: ";
+	for (int i = 0; i < v; i++)
+	{
+		for (int j = 0; j < v; j++)
+		{
+			cin >> unos;
+			if (BrCfr(unos) == true)
+			{
+				niz[i][j] = unos;
+			}
+			else
+			{
+				cout << "Ponovi unos: ";
+				j--;
+			}
+		}
+	}
+	cout << endl;
+}
+
+void ispis(int niz[][v])
+{
+	cout << "Niz izgleda ovako: " << endl;
+
+	for (int i = 0; i < v; i++)
+	{
+		for (int j = 0; j < v; j++)
+		{
+			cout << niz[i][j] << "   ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+}
+
+float aritmetickaR(int niz[v])
+{
+	float suma = 0;
+	int brojac = 0;
+	for (int i = 0; i < v; i++)
+	{
+		suma += niz[i];
+		brojac++;
+	}
+	return suma / brojac;
+
+}
+float aritmetickaC(int niz[v])
+{
+	float suma = 0;
+	int brojac = 0;
+	for (int j = 0; j < v; j++)
+	{
+		suma += niz[j];
+		brojac++;
+	}
+	return suma / brojac;
+}
+
+int main()
+{
+	int niz[v][v];
+	unos(niz);
+	ispis(niz);
+	cout << "Aritmeticka redova: " << aritmetickaR(niz[v]) << endl;
+	cout << "Aritmeticka kolona: " << aritmetickaC(niz[v]) << endl;
+	system("pause");
+	return 0;
+}
 
 /* Napisati program koji će učitati elemente matrice dimenzija n x n (const int n vrijednost izaberite po želji)
 te ispisati je li matrica centralno simetrična s obzirom na središnji element. Ako jest, program treba ispisati 1,
 ako nije, ispisati 0, a ako je broj redova paran (pa nema središnjeg elementa), ispisati -1.
 Koristiti zasebne funkcije za unos elemenata i provjeru simetričnosti.*/
 
-/*const int n = 3;
+const int n = 3;
 
 void unos(int niz[][n])
 {
@@ -863,11 +863,11 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Provjerite jel broj trivijalan. Ako jest ispišite ga, ako nije, ispiši njegove djelitelje*/
 
-/*bool trivijalan(int n)
+bool trivijalan(int n)
 {
 	for (int i = 2; i < n; i++)
 	{
@@ -906,7 +906,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, poštujuæi sve faze procesa programiranja, u kojem æete za uneseni prirodni
 broj n izrčunati sumu: S = 1! + 2! + … +n!
@@ -915,7 +915,7 @@ Upotrijebite funkciju:
 float suma (int);
 int faktorijel(int);*/
 
-/*int faktorijel(int n)
+int faktorijel(int n)
 {
 	int fkt = 1;
 	for (int i = 1; i <= n; i++)
@@ -947,7 +947,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Poštujući sve faze procesa programiranja napraviti program koji pronalazi i ispisuje 
 sve složene brojeve brojeve iz intervala m-n (10 < m < 100, 500 < n < 2000, m < n; 
@@ -959,7 +959,7 @@ U glavnom programu je potrebno ispisati aritmetičku sredinu.
 
 Složeni broj je svaki broj koji nije prosti, odnosno koji ima bar jednog djelioca osim broja 1 i samog sebe.*/
 
-/*bool slozen(int n, int m)
+bool slozen(int n, int m)
 {
 	for (int i = 2; i < m; i++)
 	{
@@ -997,14 +997,14 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program koji će omogućiti unos minimalno trocifrenih cijelih brojeva u jednodimenzionalni niz od 20 elemenata. 
 Zatim napraviti funkciju koja će u nizu pronaći sve brojeve kojima je prva cifra (početna cifra sa lijeve strane) parna i ukloniti ih iz niza. 
 Uklanjanje elemenata niza obavezno uraditi tako da ne ostaju prazni elementi već da se ostatak niza pomjeri kako ne bi bilo prazni.
 Pomjeranje ostatka niza niza obavezno raditi prilikom uklanjanja elemenata a ne sortiranjem poslije uklanjanja.*/
 
-/*int v = 8;
+int v = 8;
 
 void unos(int niz[])
 {
@@ -1058,7 +1058,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, poštujuæi sve faze procesa programiranja u kojem æete za uneseni prirodni broj n izraèunati sumu:
 S=1!/3¨2 + 2!/5'2+... n!/(2n+1)'2
@@ -1066,7 +1066,7 @@ Upotrijebite funckije:
 float suma(int);
 int faktorijel(int);*/
 
-/*int faktorijel(int n)
+int faktorijel(int n)
 {
 	int fkt = 1;
 	for (int  i = 1; i <= n; i++)
@@ -1098,7 +1098,7 @@ int main()
 	
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napišite program, poštujuæi sve faze procesa programiranja, u kojem cete unijeti jedan prirodan broj koji predstavlja
 vrijeme u minutama, a izracunati i ispisati koliko je to vremena u danima, satima i minutama.
@@ -1109,7 +1109,7 @@ Npr. ako korisnik unese 1520 minute program treba ispisati da je to 1 dan 1 sat 
 (1 sat=60 minuta, 1 dan= 24 sata=1440 minuta)
 */
 
-/*int dani(int& n)
+int dani(int& n)
 {
 	int dan = 0;
 	dan = n / 1440;
@@ -1137,14 +1137,14 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /* Poštujuæi sve faze procesa programiranje napisati program koji korisniku omoguæava unos cijelog broja N,
 te izraèunava vrijednost sume faktorijela neparnih brojeva u intervalu[1, N] koji nisu djeljivi sa brojem 7.
 Rezultat treba biti zaokružen na dvije decimale.Suma faktorijela prikazana je sljedeæom formulom
 S = 1!+ 3!+ 5!+ … + N! */
 
-/*int faktorijel(int n)
+int faktorijel(int n)
 {
 	int fkt = 1;
 	float suma = 0;
@@ -1175,7 +1175,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program u kojem je potrebno unijeti odabrani broj znamenaka poèevši od znamenke najveæe težinske vrijednosti
 pa od njih sastaviti i ispisati prirodni broj. Unos znamenaka se prekida kada se unese broj manji od 0 ili veæi od 9. 
@@ -1190,7 +1190,7 @@ Broj je savršen.
 Svršenim se naziva onaj prirodni broj kojim je zbroj pozitivnih djelitelja razlièitih od sebe samog jedanak samom tom broju.
 Najmanji broj koji ima ovakva svojstva je broj 6. Zbroj njegovih djelitelja (osim broja 6) jednak je upravo tom broju.*/
 
-/*bool savrsen(int n)
+bool savrsen(int n)
 {
 	int tmp = 0;
 	for (int i = 1; i < n; i++)
@@ -1222,11 +1222,11 @@ int main()
 		cout << "Broj nije savrsen." << endl;
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Šahovska tabla*/
 
-/*const int v = 8;
+const int v = 8;
 
 bool paran(int unos)
 {
@@ -1336,11 +1336,11 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Unesi trocifrene clanove i sortiraj uzlazno po srednjoj cifri*/
 
-/*const int vel = 7;
+const int vel = 7;
 
 void unos(int niz[])
 {
@@ -1396,7 +1396,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati funkciju koja niz od 10 cijelih brojeva sortira u opadajućem ili rastućem poretku.
 Unos elemenata niza se obavlja u glavnom programu, kao i odabir opcije koja određuje da li rezultirajući niz treba biti opadajući
@@ -1411,7 +1411,7 @@ Kako zelite sortirati niz (unesite 1 ili 2):
 Rezultirajuci niz: 98 45 12 6 3 3 2 0 -9 -10
 */
 
-/*const int v = 5;
+const int v = 5;
 
 void unos(int niz[v])
 {
@@ -1485,13 +1485,13 @@ int main()
 	ispis(niz);
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program koji će učitati prirodni broj n ≤ 10, a zatim n prirodnih trocifrenih brojeva koje treba pospremiti u odgovarajući niz.
 Taj niz brojeva treba sortirati uzlazno po srednjoj cifri. Nakon sortiranja treba ispisati dobiveni niz. 
 Za sortiranje koristiti zasebnu funkciju kojoj se proslijeđuje nesortiran niz.*/
 
-/*void unos(int niz[], int n)
+void unos(int niz[], int n)
 {
 	cout << "Unesite clanove niza: " << endl;
 	for (int i = 0; i < n; i++)
@@ -1552,7 +1552,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program koji će omogućiti:
 •	Unos 2D niza od 10x10 elemanata vodeći računa da su svi elementi dvocifreni (ukoliko unos nekog elementa ne zadovoljava uslov, 
@@ -1564,7 +1564,7 @@ aritmeticka i prost_broj (pozivati će se iz funkcije aritmeticka)
 Obavezno koristiti navedene funkcije, a parametre i eventualne povratne vrijednosti definisati prema potrebi. 
 U main() funkciji napisati testni program koji će omogućiti izvršenje svih funkcija navedenim redoslijedom.*/
 
-/*const int v = 4;
+const int v = 4;
 
 void unos(int niz[][v])
 {
@@ -1685,10 +1685,10 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 // U sumu pohraniti stepen broja 2 (2,3,8,16,32,64...)
-/*
+
 int Stepen(int n)
 {
 	int suma = 0;
@@ -1710,70 +1710,72 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
-//bool provjeri_uniju(int niz[], int velicina, int cifra)
-//{
-//	for (int i = 0; i < velicina; i++)
-//		if (niz[i] == cifra)
-//			return true;
-//	return false;
-//}
-//
-//void dodaj_u_uniju(int niz[], int &velicina, int broj)
-//{
-//	while (broj)
-//	{
-//		int cifra = broj % 10;
-//		if (!provjeri_uniju(niz, velicina, cifra))
-//			niz[velicina++] = cifra;
-//		broj /= 10;
-//	}
-//
-//}
-//
-//void sortiraj(int niz[], int velicina)
-//{
-//	for (int i = 0; i < velicina - 1; i++)
-//		for (int j = i + 1; j < velicina; j++)
-//			if (niz[i] > niz[j])
-//			{
-//				int temp = niz[i];
-//				niz[i] = niz[j];
-//				niz[j] = temp;
-//			}
-//}
-//
-//int main()
-//{
-//	int broj1, broj2;
-//	do
-//	{
-//		cin >> broj1;
-//	} while (broj1 <= 0);
-//
-//	do
-//	{
-//		cin >> broj2;
-//	} while (broj2 <= 0);
-//
-//	int niz[10], velicina = 0;
-//	dodaj_u_uniju(niz, velicina, broj1);
-//	dodaj_u_uniju(niz, velicina, broj2);
-//	sortiraj(niz, velicina);
-//
-//	for (int i = 0; i < velicina; i++)
-//		cout << niz[i] << " ";
-//
-//	system("pause>0");
-//}
+
+
+bool provjeri_uniju(int niz[], int velicina, int cifra)
+{
+	for (int i = 0; i < velicina; i++)
+		if (niz[i] == cifra)
+			return true;
+	return false;
+}
+
+void dodaj_u_uniju(int niz[], int &velicina, int broj)
+{
+	while (broj)
+	{
+		int cifra = broj % 10;
+		if (!provjeri_uniju(niz, velicina, cifra))
+			niz[velicina++] = cifra;
+		broj /= 10;
+	}
+
+}
+
+void sortiraj(int niz[], int velicina)
+{
+	for (int i = 0; i < velicina - 1; i++)
+		for (int j = i + 1; j < velicina; j++)
+			if (niz[i] > niz[j])
+			{
+				int temp = niz[i];
+				niz[i] = niz[j];
+				niz[j] = temp;
+			}
+}
+
+int main()
+{
+	int broj1, broj2;
+	do
+	{
+		cin >> broj1;
+	} while (broj1 <= 0);
+
+	do
+	{
+		cin >> broj2;
+	} while (broj2 <= 0);
+
+	int niz[10], velicina = 0;
+	dodaj_u_uniju(niz, velicina, broj1);
+	dodaj_u_uniju(niz, velicina, broj2);
+	sortiraj(niz, velicina);
+
+	for (int i = 0; i < velicina; i++)
+		cout << niz[i] << " ";
+
+	system("pause>0");
+}
 
 /*Napisati program koji simulira bacanje 3 kockice (jedna kockica ima 6 strana i na tim stranama su brojevi 1-6). 
 Simuliranje bacanja svake kockice ostvariti funkcijom rand()%6+1.Simulirati konstanto bacanje sve tri kockice dok se u dva uzastopna bacanja 
 ne desi da se dobiju isti brojevi na sve tri kockice (npr. u šestom bacanju se dobiju brojevi 2,2,2 a u sedmom 4,4,4 na sve tri kockice). 
 Ispisati koliko je ukupno bilo bacanja dok se nije ispunio navedeni uslov. Nije potrebno tražiti bilo kakav unos od korisnika.*/
 
-/*int main()
+int main()
 {
 	srand(time(NULL));
 	int k1, k2, k3, br1=0, br2=0;
@@ -1796,7 +1798,7 @@ Ispisati koliko je ukupno bilo bacanja dok se nije ispunio navedeni uslov. Nije 
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*apisati program koji će generisati Fibonacci niz i smjestiti ga u jednodimenzionalni niz od 20 elemenata. 
 (Fibonaccijev niz je niz brojeva koji počinje brojevima 0 i 1, a svaki sljedeći broj u nizu dobije se zbrajanjem prethodna dva: 
@@ -1805,7 +1807,7 @@ Uklanjanje elemenata niza obavezno uraditi tako da ne ostaju prazni elementi ve�
 Pomjeranje ostatka niza obavezno raditi prilikom uklanjanja elemenata a ne sortiranjem poslije uklanjanja. */
 
 
-/*void fibonaci(int niz[], int vel) {
+void fibonaci(int niz[], int vel) {
 	int prvi = 0, drugi = 1;
 	for (int i = 0; i < vel; i++) {
 		if (i == 0)
@@ -1847,13 +1849,13 @@ void main() {
 	ispis(niz, nVel);
 
 	system("pause>0");
-}*/
+}
 
 /*Poštujući sve faze procesa programiranja, napisati  program koji učitava prirodni broj n. 
 Program treba ispisati najmanji prirodni broj m, veći ili jednak n, koji je potencija nekog prirodnog broja, 
 tj. m = k^l, gdje su k i l ≥ 2 prirodni brojevi. */
 
-/*int main()
+int main()
 {
 	int n,m, maxi = INT_MAX;
 	cout << "Unesite broj n: ";
@@ -1874,12 +1876,12 @@ tj. m = k^l, gdje su k i l ≥ 2 prirodni brojevi. */
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Poštujući sve faze procesa programiranje, napisati program će odrediti i ispisati zadnje tri cifre broja x^n. 
 Unos brojeva x i n vršiti u glavnoj funkciji uz uslov 10<x<100 i 2<n<10, a funkciju za određivanje zadnje tri cifre napraviti zasebno.*/
 
-/*int cifre(int s)
+int cifre(int s)
 {
 	int cfr = 0;
 	cfr = s % 1000;
@@ -1905,14 +1907,14 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program koji će omogućiti korisniku unos broja n (10<=n<=1000). Zatim simulirati n bacanja kockice 
 (kockica ima 6 strana i na tim stranama su brojevi 1-6). Simuliranje bacanja svake kockice ostvariti funkcijom rand()%6+1. 
 Izračunati statističke podatke u kojem procentu ukupnog bacanja se dobiva svaki od mogućih brojeva kockice 1-6. 
 Obvezno koristiti switch statement za zbrajanje rezultata bacanja kockice.*/
 
-/*double postotak(int n, int b)
+double postotak(int n, int b)
 {
 	double procenat = (b / 100) * n;
 	return procenat;
@@ -1971,7 +1973,7 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program koji će učitati niz od 50 integer vrijednosti. 
 Napisati funkciju koja će provjeriti da li se u nizu nalazi sekvenca od minimalno 4 uzastopna broja. 
@@ -1979,7 +1981,7 @@ Funkcija treba da provjeri i prebroji koliko takvih sekvenci postoji u nizu i da
 Npr. 256,985,/321,322,323,324/,456,457,458,503,/201,202,203,204/,658....*/
 
 
-/*const int v = 8;
+const int v = 8;
 
 void sekvenca(int niz[])
 {
@@ -2010,7 +2012,7 @@ int main()
 	
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Godina univerzalnog smaka svijeta*/
 
@@ -2019,7 +2021,7 @@ int main()
 dva prirodna broja n1 i n2. Ako je n1 > n2 zamijeniti n1 sa n2. Prikazati sve parne brojeve u intervalu n1 do n2 kao sumu dvaju prostih brojeva. 
 U glavnom programu samo unijeti navedena dva prirodna broja i pozvati funkciju koja obavlja zadani posao.*/
 
-/*int prost(int x)
+int prost(int x)
 {
 	for (int i = 2; i < x; i++)
 	{
@@ -2067,9 +2069,9 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
-/*int faktorijel(int n)
+int faktorijel(int n)
 {
 	int fkt = 1;
 	for (int i = 1; i <= n; i++)
@@ -2098,13 +2100,13 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program koji će omogućiti korisniku unos dva minimalno trocifrena prirodna broja m i n (n > m, m > 100, n < 500). 
 Zatim napraviti funkciju koja će vratiti aritmetičku sredinu svih srednjih cifara svih brojeva u rangu od m do n. 
 Također ta funkcija treba ispisati najveću srednju cifru navedenog ranga.*/
 
-/*int srednja(int broj)
+int srednja(int broj)
 {
 	broj /= 10;
 	return broj % 10;
@@ -2147,7 +2149,7 @@ int main()
 	cout << "Aritmeticka sredina iznosi:" << funkcija(m, n) << endl;
 	system("pause");
 	return 0;
-}*/
+}
 
 /*Napisati program koji æe korisniku omoguæiti unos pozitivnih neparnih cijelih brojeva za koje æe se ispitivati da
 li im je prva cifra parna (npr. 4993 ili 4999). Ukoliko je zadovoljen uslov broj se smješta u niz od 10 elemenata.
@@ -2160,7 +2162,7 @@ Koristiti odvojene funkcije za provjeru da li je broj prost, za sortiranje i isp
 
 */
 
-/*int vel = 10;
+int vel = 10;
 
 int Prva(int a) {
 	do {
@@ -2257,4 +2259,4 @@ int main()
 
 	system("pause");
 	return 0;
-}*/
+}
