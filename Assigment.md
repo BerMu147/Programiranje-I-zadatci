@@ -1,4 +1,4 @@
-# Programiranje-I-zadatci-Basic C++
+# Programming-I-Basic C++ Assigments
 Some solutions of assignments
 
 #include<iostream>
