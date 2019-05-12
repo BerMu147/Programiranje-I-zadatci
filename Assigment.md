@@ -10,6 +10,7 @@ Some solutions of assignments
 using namespace std;
 
 //Zbir prve i zadnje cifre
+
 int Suma(int broj)
 {
 	int prvi = 0, zadnji= 0, suma = 0;
@@ -41,6 +42,7 @@ int main()
 }
 
 //10 karaktera, izbroj velike, male i ostale unesene
+
 int main()
 {
 	char n;
@@ -65,6 +67,7 @@ int main()
 }
 
 //Obrni broj i saberi svako drugu cifru
+
 int obrni(int broj)
 {
 	int obrnuti = 0, temp;
@@ -110,6 +113,7 @@ int main()
 
 /*Napišite program, poštujuæi sve faze procesa programiranja u kojem æete za uneseni prirodni broj n izraèunati sumu:
 S=1!/3¨2 + 2!/5'2+... n!/(2n+1)'2*/
+
 int faktorijel(int n)
 {
 	int fkt = 1;
@@ -147,8 +151,8 @@ Pravi djelitelji broja 220 su:1,2,4,5,10,20,22,50,110, anjihova suma iznosi 284;
 Pravi djelitelji broja 284 su: 1,2,4,71,142, a njihova suma iznosi 220;
 Upotijebite funckije:
 int sumaPravihDjelitelja(int);
-bool provjera(int,int);
-*/
+bool provjera(int,int);*/
+
 int SumaPD(int m)
 {
 	int suma = 0;
