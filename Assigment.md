@@ -1,4 +1,4 @@
-# Programming-I-Basic C++ Assigments
+Programming-I-Basic C++ Assigments
 Some solutions of assignments
 
 #include<iostream>
