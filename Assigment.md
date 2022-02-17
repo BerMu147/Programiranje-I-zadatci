@@ -1,6 +1,3 @@
-Programming-I-Basic C++ Assigments
-Some solutions of assignments
-
 #include<iostream>
 #include<iomanip>
 #include<Windows.h>
